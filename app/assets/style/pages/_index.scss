@@ -1,0 +1,126 @@
+.banner {
+  height: 100vh;
+  background-image: url(../images/bg_home.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.text-gradient {
+  background: linear-gradient(to top, #62db54, #09acf5);
+  background: -webkit-linear-gradient(to top, #62db54, #09acf5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.background-gradient {
+  background: linear-gradient(to left, #62db54, #09acf5);
+}
+
+.banner-text {
+  padding: 51px 0;
+}
+
+.white-point {
+  height: 10px;
+  width: 10px;
+  background-color: #ffffff;
+}
+
+.feature {
+  background-color: transparent;
+  border: none;
+  &:hover {
+    background-color: #202020;
+    border: 1px solid #62db54;
+    border-radius: 12px;
+    .feature-icon {
+      background: linear-gradient(to top, #62db54, #09acf5);
+      background: -webkit-linear-gradient(to top, #62db54, #09acf5);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}
+
+.lecture {
+  &:hover {
+    border: 2px solid #62db54;
+  }
+}
+
+.line {
+  width: 50px;
+  height: 3px;
+  background-color: #62db54;
+}
+
+.bg-info-1 {
+  height: 615px;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.9)),
+    url(../images/info01.jpg);
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(rgba(28, 28, 28, 0)),
+      url(../images/info01.jpg);
+  }
+}
+
+.bg-info-2 {
+  height: 615px;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.9)),
+    url(../images/info02.jpg);
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(rgba(28, 28, 28, 0)),
+      url(../images/info02.jpg);
+  }
+}
+
+.bg-info-3 {
+  height: 615px;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.9)),
+    url(../images/info03.jpg);
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(rgba(28, 28, 28, 0)),
+      url(../images/info03.jpg);
+  }
+}
+
+.bg-info-4 {
+  height: 615px;
+  background-image: linear-gradient(rgba(28, 28, 28, 0.9)),
+    url(../images/info04.jpg);
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(rgba(28, 28, 28, 0)),
+      url(../images/info04.jpg);
+  }
+}
+
+.info {
+  &:hover {
+    .info-icon {
+      color: #62db54;
+    }
+    .line {
+      background-color: #62db54 !important;
+    }
+  }
+}
+
+.swiper-slide {
+  width: 0;
+}
+
+.small-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
