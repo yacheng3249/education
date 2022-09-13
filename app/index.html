@@ -396,11 +396,11 @@ current: index
       <div class="line"></div>
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="d-flex justify-content-between">
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
+      <div class="col position-relative article">
+        <div class="corner-1 position-absolute top-0 start-0"></div>
+        <div class="corner-2 position-absolute top-0 end-0"></div>
+        <div class="corner-3 position-absolute bottom-0 start-0"></div>
+        <div class="corner-4 position-absolute bottom-0 end-0"></div>
         <div class="card h-100 bg-transparent border-0 p-32">
           <img
             src="./assets/images/article01.jpg"
@@ -418,39 +418,47 @@ current: index
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100">
+      <div class="col position-relative article">
+        <div class="corner-1 position-absolute top-0 start-0"></div>
+        <div class="corner-2 position-absolute top-0 end-0"></div>
+        <div class="corner-3 position-absolute bottom-0 start-0"></div>
+        <div class="corner-4 position-absolute bottom-0 end-0"></div>
+        <div class="card h-100 bg-transparent border-0 p-32">
           <img
             src="./assets/images/article02.jpg"
-            class="card-img-top"
+            class="card-img-top mb-3"
             alt="article02"
           />
-          <div class="card-body">
-            <h5 class="card-title"><b>軟體工程師有哪些類別</b></h5>
+          <div class="mb-3">
+            <h5 class="card-title mb-3"><b>軟體工程師有哪些類別</b></h5>
             <p class="card-text">
               軟體工程師領域廣闊，許多人仍然對此相關職務感到陌生，本篇就介紹主流的軟體工程師職務
             </p>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">MORE</small>
+          <div class="border-0 text-end">
+            <a href="#" class="text-success">MORE</a>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100">
+      <div class="col position-relative article">
+        <div class="corner-1 position-absolute top-0 start-0"></div>
+        <div class="corner-2 position-absolute top-0 end-0"></div>
+        <div class="corner-3 position-absolute bottom-0 start-0"></div>
+        <div class="corner-4 position-absolute bottom-0 end-0"></div>
+        <div class="card h-100 bg-transparent border-0 p-32">
           <img
             src="./assets/images/article03.jpg"
-            class="card-img-top"
+            class="card-img-top mb-3"
             alt="article03"
           />
-          <div class="card-body">
-            <h5 class="card-title"><b>免費 25 小時前端教學資源</b></h5>
+          <div class="mb-3">
+            <h5 class="card-title mb-3"><b>免費 25 小時前端教學資源</b></h5>
             <p class="card-text">
               這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程
             </p>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">MORE</small>
+          <div class="border-0 text-end">
+            <a href="#" class="text-success">MORE</a>
           </div>
         </div>
       </div>
@@ -458,4 +466,120 @@ current: index
   </div>
 </section>
 
-<script src="./assets/js/index.js"></script>
+<section class="bg-share py-80">
+  <div class="mb-5 col d-flex flex-column align-items-center">
+    <h2 class="mb-3 text-center">
+      專屬你的學習課程<br />超過 3000 位學員得到了程式超能力
+    </h2>
+    <div class="line"></div>
+  </div>
+
+  <div class="swiper mySwiper share-container position-relative">
+    <div class="share-box rounded-3"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./assets/images/share.jpg" class="share-bg-photo" />
+        <div
+          class="p-32 bg-white share-border position-absolute bottom-0 end-0"
+        >
+          <h5 class="mb-3">老師很有耐心</h5>
+          <p class="mb-0">
+            老師手把手的細心教學，用手繪圖，以淺顯易懂的<br />方式，讓零網頁基礎的我也能快速了解網頁的架構<br />與原理，學網頁變得有趣多了！
+          </p>
+        </div>
+        <img
+          src="./assets/images/student01.jpg"
+          alt="student01"
+          class="small-photo rounded-circle selfie"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          class="share-bg-photo"
+        />
+        <div
+          class="p-32 bg-white share-border position-absolute bottom-0 end-0"
+        >
+          <h5 class="mb-3">老師上課風趣</h5>
+          <p class="mb-0">
+            老師手把手的細心教學，用手繪圖，以淺顯易懂的<br />方式，讓零網頁基礎的我也能快速了解網頁的架構<br />與原理，學網頁變得有趣多了！
+          </p>
+        </div>
+        <img
+          src="./assets/images/student02.jpg"
+          alt="student02"
+          class="small-photo rounded-circle selfie"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/images/share.jpg" class="share-bg-photo" />
+        <div
+          class="p-32 bg-white share-border position-absolute bottom-0 end-0"
+        >
+          <h5 class="mb-3">老師很有耐心</h5>
+          <p class="mb-0">
+            老師手把手的細心教學，用手繪圖，以淺顯易懂的<br />方式，讓零網頁基礎的我也能快速了解網頁的架構<br />與原理，學網頁變得有趣多了！
+          </p>
+        </div>
+        <img
+          src="./assets/images/student03.jpg"
+          alt="student03"
+          class="small-photo rounded-circle selfie"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          class="share-bg-photo"
+        />
+        <div
+          class="p-32 bg-white share-border position-absolute bottom-0 end-0"
+        >
+          <h5 class="mb-3">老師講解清晰</h5>
+          <p class="mb-0">
+            老師手把手的細心教學，用手繪圖，以淺顯易懂的<br />方式，讓零網頁基礎的我也能快速了解網頁的架構<br />與原理，學網頁變得有趣多了！
+          </p>
+        </div>
+        <img
+          src="./assets/images/student04.jpg"
+          alt="student04"
+          class="small-photo rounded-circle selfie"
+        />
+      </div>
+    </div>
+    <div class="d-flex swiper-move">
+      <span class="material-symbols-outlined swiper-button-prev d-block me-3"
+        >arrow_back</span
+      >
+      <div class="swiper-pagination d-flex"></div>
+      <span class="material-symbols-outlined swiper-button-next d-block ms-3"
+        >arrow_forward</span
+      >
+    </div>
+  </div>
+</section>
+
+<section class="bg-black py-80">
+  <div class="row">
+    <div
+      class="col-md-9 bg-dark mx-auto d-flex justify-content-center align-items-center py-5 rounded-3"
+    >
+      <span class="material-symbols-outlined me-5 mb-0 book-icon">
+        menu_book
+      </span>
+      <div class="me-5">
+        <h2>加入我們成為導師</h2>
+        <p class="mb-0">
+          歡迎各大程式大神加入我們，用知識在世界留下一點影響力。
+        </p>
+      </div>
+      <button
+        type="button"
+        class="btn btn-dark ms-5 mb-0 border-white px-32 py-2"
+      >
+        立即預約
+      </button>
+    </div>
+  </div>
+</section>

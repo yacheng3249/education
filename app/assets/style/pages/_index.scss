@@ -115,8 +115,121 @@
   }
 }
 
-.swiper-slide {
-  width: 0;
+.article {
+  &:hover {
+    .corner-1 {
+      width: 32px;
+      height: 32px;
+      border-top: 1px solid #62db54;
+      border-left: 1px solid #62db54;
+      border-radius: 12px 0 0 0;
+    }
+
+    .corner-2 {
+      width: 32px;
+      height: 32px;
+      border-top: 1px solid #62db54;
+      border-right: 1px solid #62db54;
+      border-radius: 0 12px 0 0;
+    }
+
+    .corner-3 {
+      width: 32px;
+      height: 32px;
+      border-bottom: 1px solid #62db54;
+      border-left: 1px solid #62db54;
+      border-radius: 0 0 0 12px;
+    }
+
+    .corner-4 {
+      width: 32px;
+      height: 32px;
+      border-bottom: 1px solid #62db54;
+      border-right: 1px solid #62db54;
+      border-radius: 0 0 12px 0;
+    }
+  }
+}
+
+.bg-share {
+  height: 733px;
+  background-image: url(../images/bg_share.jpg);
+  background-size: cover;
+  background-position: center;
+  .share-bg-photo {
+    width: 525px;
+    height: 381px;
+    border-radius: 24px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+  }
+}
+
+.share-container {
+  width: 925px;
+  height: 429px;
+}
+
+.share-box {
+  width: 525px;
+  height: 381px;
+  border: 1px solid #7c7e77;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.share-border {
+  display: inline-block;
+  border-radius: 24px 24px 24px 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: black;
+}
+
+.selfie {
+  position: absolute;
+  right: 32px;
+  bottom: 126px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination {
+  position: unset;
+  color: #62db54;
+}
+
+.swiper-pagination-bullet {
+  position: unset;
+  background: #62db54 !important;
+  opacity: 1 !important;
+  transition: 0.5s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 16px;
+  height: 8px;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
+.swiper-move {
+  position: absolute;
+  bottom: 0;
+  left: 196px;
+}
+
+.book-icon {
+  width: 103px;
+  font-size: 80px;
 }
 
 .small-photo {
