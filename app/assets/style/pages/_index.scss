@@ -3,6 +3,10 @@
   background-image: url(../images/bg_home.jpg);
   background-size: cover;
   background-position: center;
+  @include mobile {
+    height: 448px;
+    max-width: 100%;
+  }
 }
 
 .text-gradient {
@@ -66,6 +70,9 @@
     background-image: linear-gradient(rgba(28, 28, 28, 0)),
       url(../images/info01.jpg);
   }
+  @include mobile {
+    height: 263px;
+  }
 }
 
 .bg-info-2 {
@@ -77,6 +84,9 @@
   &:hover {
     background-image: linear-gradient(rgba(28, 28, 28, 0)),
       url(../images/info02.jpg);
+  }
+  @include mobile {
+    height: 263px;
   }
 }
 
@@ -90,6 +100,9 @@
     background-image: linear-gradient(rgba(28, 28, 28, 0)),
       url(../images/info03.jpg);
   }
+  @include mobile {
+    height: 263px;
+  }
 }
 
 .bg-info-4 {
@@ -101,6 +114,9 @@
   &:hover {
     background-image: linear-gradient(rgba(28, 28, 28, 0)),
       url(../images/info04.jpg);
+  }
+  @include mobile {
+    height: 263px;
   }
 }
 
@@ -123,6 +139,9 @@
       border-top: 1px solid #62db54;
       border-left: 1px solid #62db54;
       border-radius: 12px 0 0 0;
+      @include mobile {
+        display: none;
+      }
     }
 
     .corner-2 {
@@ -131,6 +150,9 @@
       border-top: 1px solid #62db54;
       border-right: 1px solid #62db54;
       border-radius: 0 12px 0 0;
+      @include mobile {
+        display: none;
+      }
     }
 
     .corner-3 {
@@ -139,6 +161,9 @@
       border-bottom: 1px solid #62db54;
       border-left: 1px solid #62db54;
       border-radius: 0 0 0 12px;
+      @include mobile {
+        display: none;
+      }
     }
 
     .corner-4 {
@@ -147,6 +172,9 @@
       border-bottom: 1px solid #62db54;
       border-right: 1px solid #62db54;
       border-radius: 0 0 12px 0;
+      @include mobile {
+        display: none;
+      }
     }
   }
 }
@@ -156,19 +184,32 @@
   background-image: url(../images/bg_share.jpg);
   background-size: cover;
   background-position: center;
+  @include mobile {
+    background-image: none;
+    background-color: #000000;
+  }
   .share-bg-photo {
     width: 525px;
     height: 381px;
     border-radius: 24px;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 5px;
+    @include mobile {
+      width: 330px;
+      height: auto;
+      position: static;
+    }
   }
 }
 
 .share-container {
   width: 925px;
   height: 429px;
+  @include mobile {
+    width: 331px;
+    height: auto;
+  }
 }
 
 .share-box {
@@ -176,8 +217,11 @@
   height: 381px;
   border: 1px solid #7c7e77;
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 0;
+  @include mobile {
+    display: none;
+  }
 }
 
 .share-border {
@@ -189,10 +233,24 @@
   color: black;
 }
 
+.share-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @include mobile {
+    position: static;
+    margin-top: 40px;
+  }
+}
+
 .selfie {
   position: absolute;
   right: 32px;
   bottom: 126px;
+  @include mobile {
+    right: 36px;
+    bottom: 184px;
+  }
 }
 
 .swiper-button-next::after,
@@ -225,6 +283,10 @@
   position: absolute;
   bottom: 0;
   left: 196px;
+  @include mobile {
+    position: static;
+    margin-top: 32px;
+  }
 }
 
 .book-icon {
@@ -237,3 +299,11 @@
   height: 100px;
   object-fit: cover;
 }
+
+.swiper-btn-resize {
+  flex-shrink: 100 !important;
+}
+
+// .swiper-slide {
+//   overflow-x: hidden;
+// }
